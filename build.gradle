@@ -117,7 +117,7 @@ configure(javaprojects) {
   }
 
   // Apply the gradle file specific to all java projects
-  apply from: "$rootDir/gradle/java-projects.gradle"
+  apply from: "$rootDir/jodconverter/gradle/java-projects.gradle"
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -231,7 +231,7 @@ nexusStaging {
 configure(publishedprojects) {
 
   // Apply the gradle file specific to all published projects
-  apply from: "$rootDir/gradle/published-projects.gradle"
+  apply from: "$rootDir/jodconverter/gradle/published-projects.gradle"
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

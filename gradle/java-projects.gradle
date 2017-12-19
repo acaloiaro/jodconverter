@@ -138,7 +138,7 @@ spotless {
     googleJavaFormat()
     
     // Import order
-    importOrderFile "$rootDir/spotless.importorder"
+    importOrderFile "$rootDir/jodconverter/spotless.importorder"
 
     // Java Source Header File
     licenseHeaderFile("$rootDir/spotless.license.java")
