@@ -1,5 +1,16 @@
 description = 'JODConverter - Core'
 
+sourceSets {
+  main {
+    java {
+      srcDirs = ['src/main/java']
+    }
+    resources {
+      srcDirs = ['src/resources']
+    }
+  }
+}
+
 dependencies {
   compile libraries.commons_io
   compile libraries.commons_lang3
@@ -22,3 +33,6 @@ integrationTest {
   exclude 'org/jodconverter/StressITest.class'
   exclude 'org/jodconverter/PerformanceITest.class'
 }
+
+apply plugin:'application'
+mainClassName = "org.jodconverter.Converter"
